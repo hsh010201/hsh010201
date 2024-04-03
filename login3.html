@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light grey background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center; /* Ensure everything is centered */
+  }
+  .back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #f0f0f0; /* Same as body background */
+    border: none;
+    padding: 10px;
+    color: #a0a0a0; /* Darker gray for the symbol */
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .container {
+    width: 100%; /* Use full width to center contents */
+    max-width: 300px; /* Maximum width of form */
+    margin: 0 auto; /* Center the container */
+  }
+  .profile-picture {
+    margin: 20px auto;
+    width: 100px;
+    height: 100px;
+    border: 4px solid hwb(247 1% 67%); /* Even darker teal color */
+    border-radius: 50%;
+    background-color: #eee;
+  }
+  .input-field {
+    width: calc(100% - 34px); /* Adjust width to account for padding */
+    padding: 17px;
+    margin: 3px auto; /* Center these elements */
+    border: 0px solid #dddddd;
+    border-radius: 5px;
+  }
+  .login-button {
+    width: 50%; /* Smaller width */
+    padding: 15px; /* Thicker button */
+    margin: 20px auto; /* Center button */
+    background-color: hwb(267 2% 60%); /* Even darker teal color */
+    border: none;
+    color: white;
+    border-radius: 30px; /* More rounded */
+    cursor: pointer;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+
+<button class="back-button"><</button> <!-- Updated symbol -->
+
+<div class="container">
+  <div class="profile-picture"></div>
+  <input class="input-field" type="email" placeholder="이메일">
+  <input class="input-field" type="password" placeholder="비밀번호">
+  <button class="login-button">로그인</button>
+</div>
+
+</body>
+</html>

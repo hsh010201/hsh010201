@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML요소</title>
+
+</head>
+<body>
+    <h1>HTML 시작하기</h1>
+    <h2>HTML 시작하기</h2>
+    <h3>HTML 시작하기</h3>
+    <h4>HTML 시작하기</h4>
+    <h5>HTML 시작하기</h5>
+    <p>
+       <strong><em>텍스트의<br> 성격</em></strong> <!--br은 줄바꿈 태그이며 종료 태그가 없다-->
+     <br>
+     <pre>pre요소는 공백문자
+        를 
+        입력한 그대로 화면에           출력한다</pre>
+    </p>
+    <p>
+        <mark>중요</mark>
+    </p>
+    <p>
+    </p>
+    <p>첫줄에<br> 문서형식선언<br> !DOCTYPEE<br> html</p>
+    <p>다음줄부터 요소로 구성</p>
+    <p><strong>목록</strong>
+        <ul>
+            <li>첫 번째 항목</li>
+            <p>ㅇ</p>
+            <dt>1-1</dt><dd>첫번째 항목 중 첫번째</dd>
+            <li>두 번째 항목</li>
+            <li>세 번째 항목</li>
+        </ul>
+    </p>
+
+    
+
+
+
+
+
+
+
+
+    <table border = 1>
+        <tr>
+            <th>제목</th><th>저자</th><th>출판사</th><th>기타정보</th><th>기타정보2</th>
+        </tr>
+        <tr>
+            <td>html</td><td>ssssss</td><td>0000000000000000000000출판사</td><td></td><td></td>
+        </tr>
+        <tr>
+            <td>인생</td><td>dfsdf</td><td>dgfgsdfg출판사</td><td></td><td></td>
+        </tr>
+        <tr>
+            <td> </td><td> </td><td> </td><td></td><td></td>
+        </tr>
+        <tr>
+            <td colspan =5><mark>옆 칸 셀 합치기</mark></td>
+
+        </tr>
+
+    </table>
+    <table border = 1>
+        <tr>
+            <td rowspan=2>row 합치는 것
+
+        </tr>
+    </table>
+    <style>
+        table.center-all td {
+          text-align: center;
+        }
+      </style>
+      
+      <table class="center-all" border="4">
+        <tr>
+            <td colspan = 4>asdfasd</td>
+        </tr>
+        <tr>
+          <td>요소1</td><td>요소2</td><td>요소3</td><td>요소4</td>
+        </tr>
+        <tr>
+            <td rowspan="3">요<br>소<br>1-1</td><td>2</td><td>2</td><td>2</td>
+        </tr>
+        <tr>
+            <td>e</td><td>e</td>w<td>钅</td>
+        </tr>
+        <tr>
+            <td>ｓｆｄ<br>ｆｄ</td><td></td><td></td>
+        </tr>
+      </table>
+      <p>===============================================================================</p>
+
+
+      <h3>웹사이트 링크 목록 페이지</h3>
+      <p>각 웹사이트를 클릭하면 해당 링크로 이동함.
+          <ul>
+              <li>
+                  <a href="https://www.naver.com/" title="naver"> 네이버</a>
+              </li>
+              <li>
+                  <a href="https://www.google.com/" title="google">구글</a>
+              </li>
+              <li>
+                  <a href="https://chat.openai.com/" title="gpt">gpt</a>
+              </li>
+              <li>
+                  <a href="https://www.dcinside.com/" title="dcinside">dcinside</a>
+              </li>
+          </ul>
+          <p>===============================================================================</p>
+      </p>
+  
+      <h2>
+          웹사이트 링크 목록 페이지
+      </h2>
+      <table border="1">
+          <tr>
+              <th>사이트</th><th>링크</th><th>설명</th>
+          </tr>
+          <tr>
+              <td>
+                  <figure> <!--figure와 figcaption요소는 그림,사진,다이어그램과 텍스트 등의 콘텐츠를 함께 묶어서 하나의 독립된 단위로 취급하는 것-->
+                      <img src="naver logo.jpg" alt="네이버" width="75"><br>
+                      <figcaption>네이버</figcaption>
+                  </figure>
+              </td>
+              <td>
+                  <a href="https://www.naver.com/" title="naver"> 네이버</a>
+              </td>
+              <td>
+                  <p>네이버 설명</p>
+              </td>
+          </tr>
+          <tr>
+              <td>
+                  <figure>
+                      <img src="google_logo.png" alt="구글" width="75"><br>
+                      <figcaprion>구글</figcaprion>
+                  </figure>
+              </td>
+              <td>
+                  <a href="https://www.google.com/" title="google">구글</a>
+              </td>
+              <td>
+                  <p>구글 설명</p>
+              </td>
+          </tr>
+  
+      </table>
+      <h1>비디오 재생</h1>
+      <video controls src="sample_.mp4" width="700"></video>
+      <iframe src="https://youtu.be/VHw59LnNE5w?feature=shared" width="700" name="ncs music"></iframe>
+</body>
+</html>

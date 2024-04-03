@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<style>
+  body {
+    font-family: Arial, sans-serif; /* 웹 페이지에서 사용할 글꼴 설정 */
+    background-color: #f0f0f0; /* 웹 페이지의 배경색을 옅은 회색으로 설정 */
+    margin: 0; /* 바깥 여백을 0으로 설정 */
+    padding: 0; /* 안쪽 여백을 0으로 설정 */
+    display: flex; /* Flexbox 레이아웃을 사용하여 자식 요소들을 배치 */
+    justify-content: center; /* 가로축을 중심으로 자식 요소들을 가운데 정렬 */
+    align-items: center; /* 세로축을 중심으로 자식 요소들을 가운데 정렬 */
+    height: 100vh; /* 높이를 브라우저 창의 높이와 동일하게 설정 */
+  }
+  .back-button {
+    position: absolute; /* 절대 위치를 사용하여 페이지 상의 특정 위치에 버튼 배치 */
+    top: 20px; /* 상단에서부터 20px 떨어진 곳에 위치 */
+    left: 20px; /* 좌측에서부터 20px 떨어진 곳에 위치 */
+    background-color: #f0f0f0; /* 버튼 배경색을 body의 배경색과 동일하게 설정 */
+    border: none; /* 테두리 없앰 */
+    padding: 10px; /* 버튼 안쪽 여백을 10px로 설정 */
+    color: #a0a0a0; /* 버튼 글씨색을 진한 회색으로 설정 */
+    font-size: 24px; /* 글씨 크기를 24px로 설정 */
+    cursor: pointer; /* 마우스 커서를 버튼 위에 올리면 손가락 모양으로 변경 */
+  }
+  .container {
+    width: 100%; /* 컨테이너의 너비를 100%로 설정하여 부모 요소의 너비와 동일하게 설정 */
+    max-width: 300px; /* 컨테이너의 최대 너비를 300px로 설정 */
+    margin: 0 auto; /* 컨테이너를 수평 가운데에 배치 */
+  }
+  .profile-picture {
+    margin: 20px auto; /* 위 아래 여백을 20px로 설정하고 좌우는 자동으로 가운데 정렬 */
+    width: 100px; /* 프로필 사진의 너비를 100px로 설정 */
+    height: 100px; /* 프로필 사진의 높이를 100px로 설정 */
+    border: 4px solid hwb(247 1% 67%); /* 프로필 사진의 테두리를 짙은 청록색으로 설정 */
+    border-radius: 50%; /* 프로필 사진의 모서리를 둥글게 만들어 원형으로 설정 */
+    background-color: #eee; /* 프로필 사진의 배경색을 연한 회색으로 설정 */
+  }
+  .input-field {
+    width: calc(100% - 34px); /* 입력 필드의 너비를 부모 요소의 너비에서 34px 뺀 만큼으로 설정 */
+    padding: 17px; /* 입력 필드 안쪽 여백을 17px로 설정 */
+    margin: 3px auto; /* 입력 필드의 위 아래 여백을 3px로 설정하고 좌우는 자동으로 가운데 정렬 */
+    border: 0px solid #dddddd; /* 입력 필드의 테두리 없앰 */
+    border-radius: 5px; /* 입력 필드의 모서리를 둥글게 만듦 */
+  }
+  .login-button {
+    width: 50%; /* 로그인 버튼의 너비를 50%로 설정 */
+    padding: 15px; /* 로그인 버튼의 안쪽 여백을 15px로 설정 */
+    margin: 20px auto; /* 로그인 버튼의 위 아래 여백을 20px로 설정하고 좌우는 자동으로 가운데 정렬 */
+    display: block; /* 블록 레벨 요소로 만들어줌으로써 width를 적용가능하게 하고, margin auto로 중앙 정렬 가능 */
+
+    background-color: hwb(267 2% 60%); /* 로그인 버튼의 배경색을 짙은 청록색으로 설정 */
+    border: none; /* 로그인 버튼의 테두리 없앰 */
+    color: white; /* 로그인 버튼의 글씨색을 흰색으로 설정 */
+    border-radius: 30px; /* 로그인 버튼의 모서리를 매우 둥글게 만듦 */
+    cursor: pointer; /* 마우스 커서를 버튼 위에 올리면 손가락 모양으로 변경 */
+    font-weight: bold; /* 로그인 버튼의 글씨를 굵게 설정 */
+  }
+</style>
+</head>
+<body>
+
+<button class="back-button"><</button> <!-- "<" 기호를 사용한 뒤로가기 버튼 -->
+
+<div class="container">
+  <div class="profile-picture"></div> <!-- 사용자가 프로필 사진을 올릴 수 있는 공간 -->
+  <input class="input-field" type="email" placeholder="이메일"> <!-- 이메일을 입력할 수 있는 필드 -->
+  <input class="input-field" type="password" placeholder="비밀번호"> <!-- 비밀번호를 입력할 수 있는 필드 -->
+  <button class="login-button">로그인</button> <!-- 로그인 버튼 -->
+</div>
+
+</body>
+</html>
